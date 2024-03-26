@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Mar 26, 2024 alle 11:08
+-- Creato il: Mar 26, 2024 alle 11:48
 -- Versione del server: 10.4.28-MariaDB
 -- Versione PHP: 8.0.28
 
@@ -57,7 +57,8 @@ CREATE TABLE `utente` (
   `indirizzo` varchar(50) NOT NULL,
   `DDN` date NOT NULL,
   `telefono` int(13) NOT NULL,
-  `email` varchar(50) NOT NULL
+  `email` varchar(50) NOT NULL,
+  `password` varchar(32) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
