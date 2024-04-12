@@ -16,9 +16,9 @@ echo "Errore nella connessione!";
 	$pw = $_POST[ 'password'];
 	$pw_MD5=md5 ($pw) ;
 
-	$query="INSERT INTO users
+	$query="INSERT INTO utente
 	( CF, indirizzo, DDN, telefono, email, password)
-		VALUES ('$CF','$indirizzo', '$DDN', '$telefono', '$email', $pw_MD5')";
+		VALUES ('$CF','$indirizzo', '$DDN', '$telefono', '$email', '$pw_MD5')";
 
 	$result = mysqli_query($conn, $query);
 

@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "test";
+$dbname = "banca";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -11,14 +11,14 @@ if(!$conn){
    echo "Errore nella connessione!";
 }
 
-    $username = $_POST['username'];
-    $password = $_POST['password'];
+    $CF = $_POST['CF'];
+    $pw = $_POST['password'];
 
-	$pw_MD5=md5($password);
+	$pw_MD5=md5($pw);
 
 	$query="SELECT * 
-		FROM users 
-		WHERE username='$username' AND password='$pw_MD5'";
+		FROM utente 
+		WHERE CF='$CF' AND password='$pw_MD5'";
 		
 	$result = mysqli_query($conn ,$query);
 					

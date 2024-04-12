@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Bank Login</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Login</title>
 </head>
 <body>
-    <header>
-
-        <h1>Log in to Our Bank</h1>
-       
-    </header>
-    <br>
-    <main>
-        <form action="login.php" method="post">
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" required>
-            <br>
-            <label for="password">Password:</label>
-            <input type="password" name="password" id="password" required>
-            <br>
-            <button type="submit">Log in</button>
-        </form>
-        <br>
-    </main>
-    <footer>
-        <p>Don't have an account? <a href="register.html">Register here</a>.</p>
-    </footer>
+  <div class="form-container">
+  <h2>Login</h2>
+  <form action="login.php" method="POST">
+    <label for="CF">Codice Fiscale::</label><br>
+    <input type="text" id="CF" name="CF"><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br>
+    <input type="submit" value="Login">
+  </form>
+</div>
+<br>
+  <div class="form-container">
+    <title>Registrazione</title>
+  <h2>Registrazione</h2>
+  <form action="Registrazione.php" method="POST">
+    <label for="CF">Codice Fiscale:</label><br>
+    <input type="text" id="CF" name="CF"><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br>
+    <input type="submit" value="Registrati">
+  </form>
+</div>
 </body>
 </html>
