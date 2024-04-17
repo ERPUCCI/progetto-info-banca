@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bank Registration</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <img src="img/creaconto.jpeg">
+  <nav>
+    <label class="logo">LOGO</label>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Info</a></li>
+        </ul>
+  </nav>
+    <div id="crea">
+        <h2>REGISTRATI</h2>
+        <form action="Registrazione.php" method="post">
+            <label for="CF">Codice Fiscale:</label><br>
+            <input type="text" name="CF" id="CF" required><br>
+            <label for="indirizzo">Indirizzo:</label><br>
+            <input type="text" name="indirizzo" id="indirizzo" required><br>
+            <label for="DDN">Data di nascita:</label><br>
+            <input type="date" name="DDN" id="DDN" required><br>
+            <label for="telefono">Telefono:</label><br>
+            <input type="tel" name="telefono" id="telefono" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" name="password" id="password" required><br>
+            <button type="submit">Register</button>
+
+            <li><a href="login.html">Hai gia un account</a></li>
+        </form>
+    </div>
+        
+    <footer>
+        <p>Already have an account? <a href="login.html">Log in here</a>.</p>
+    </footer>
+</body>
+</html>
